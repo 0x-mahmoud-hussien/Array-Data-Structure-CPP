@@ -17,10 +17,10 @@ public:
     {
         cout << "Enter number of elements: ";
         cin >> size;
-        if (size > 100) 
+        if (size > 10000) 
         {
-            cout << "Max 100 elements allowed. Setting size = 100.\n";
-            size = 100;
+            cout << "Max 10000 elements allowed. Setting size = 10000.\n";
+            size = 10000;
         }
 
         for (int i = 0; i < size; i++) 
@@ -502,7 +502,7 @@ public:
             cout << "Invalid rotation count!\n";
             return;
         }
-        k = k % size; // FIXED: لو k اكبر من size
+        k = k % size; 
         
         for (int r = 0; r < k; r++)
         {
